@@ -2,7 +2,7 @@
 
 #####################################################################################
 # Backup tool for Elasticsearch from QA and all production machines, you can put scrptis in all Elasticsearch servers. 
-# @author: mauso
+# @author: maauso
 # @version: 2014-11-01 18:51
 # This script colud be manage with puppet
 #####################################################################################
