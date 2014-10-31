@@ -49,7 +49,7 @@ else
       else
         curl -s -XGET "http://$1:9200/_snapshot/" | grep location
         if [[ '0' -ne "$?"  ]]; then
-          echo " http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/modules-snapshots.html " && exit 1
+          echo "We need repository , http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/modules-snapshots.html " && exit 1
         else
           curator --timeout 3600  snapshot  --repository $2 --snapshot-name $date --all-indices
           rm -rf /$mountpoint/$repository/backup.lck
